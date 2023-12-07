@@ -7,7 +7,7 @@ const BrowserWindow = electron.BrowserWindow
 
 const { exec } = require('child_process'); 
 
-const sc = `sc create MySQL binPath= "${__dirname}/bin/mysqld.exe"`
+const sc = `sc create MySQL binPath= "${__dirname}\\mysql\\bin\\mysqld.exe"`
 const startmysql = `net start MySQL`
 const stopmysql = `net stop MySQL`
 
