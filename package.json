@@ -11,7 +11,7 @@
   },
   "author": "idriss Boukmouche",
   "devDependencies": {
-    "electron": "^13.1.0",
+    "electron": "^22.3.25",
     "electron-packager": "^15.2.0"
   },
   "dependencies": {
