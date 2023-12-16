@@ -47,8 +47,7 @@ Name | Default | Description
 `directives` | `{}` | An object with the custom PHP directives
 `config` | `null` | The path of a custom php.ini file
 `env` | `process.env` | The environment variables passed
-
-`mysql host` | `127.0.0.1` | The mysql server's host
+`mysql-host` | `127.0.0.1` | The mysql server's host
 `port` | `3311` | The mysql port used
 `username` | `root` | The mysql username used
 `password` | `root` | The mysql password used
