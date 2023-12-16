@@ -1,15 +1,12 @@
-# Electron-php-mysql-
-Easiest way to use PHP, mysql and laravel in electron js
+# Electron-php-mysql
+Easiest way to use PHP, mysql  in electron js
 - *At the moment it only supports windows. I sincerely invite everyone to contribute to this project and make it work in mac and linux as well.*
 
-**Clone and run for a quick way to see ElectronJSPHPMysqlLaravel in action.**
+**Clone and run for a quick way to see ElectronJSPHPMysql in action.**
 ```
-git clone https://github.com/TerminalDZ/electron-php-mysql-laravel
-cd electron-php-mysql-laravel
+git clone https://github.com/TerminalDZ/electron-php-mysql
+cd electron-php-mysql
 npm install
-cd public
-composer install
-cd ..
 npm start
 ```
 
@@ -18,21 +15,17 @@ A basic ElectronJSPHPMysqlLaravel application needs just these files:
 
 - `package.json` - Points to the app's main file and lists its details and dependencies.
 - `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `public/composer.json` - Refers to the main file of an application and lists its details and dependencies. Especially for laravel.
-- `public/public/index.php` - A web page to render. This is the app's **renderer process**.
+
 
 
 ## To Use
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) and [Composer](https://getcomposer.org/) installed on your computer. From your command line:
+To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))  installed on your computer. From your command line:
 
 ```
-git clone https://github.com/TerminalDZ/electron-php-mysql-laravel
-cd electron-php-mysql-laravel
+git clone https://github.com/TerminalDZ/electron-php-mysql
+cd electron-php-mysql
 npm install
-cd public
-composer install
-cd ..
 npm start
 ```
 
@@ -54,6 +47,15 @@ Name | Default | Description
 `directives` | `{}` | An object with the custom PHP directives
 `config` | `null` | The path of a custom php.ini file
 `env` | `process.env` | The environment variables passed
+
+`mysql host` | `127.0.0.1` | The mysql server's host
+`port` | `3311` | The mysql port used
+`username` | `root` | The mysql username used
+`password` | `root` | The mysql password used
+`phpmyadmin` | `127.0.0.1:5555/phpmyadmin/index.php` | The phpmyadmin username : root | password : root
+
+
+
 
 Example:
 
