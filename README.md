@@ -1,4 +1,4 @@
-# Electron-php-mysql-laravel
+# Electron-php-mysql-
 Easiest way to use PHP, mysql and laravel in electron js
 - *At the moment it only supports windows. I sincerely invite everyone to contribute to this project and make it work in mac and linux as well.*
 
