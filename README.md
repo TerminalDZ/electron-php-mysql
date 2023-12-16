@@ -51,7 +51,7 @@ Name | Default | Description
 `port` | `3311` | The mysql port used
 `username` | `root` | The mysql username used
 `password` | `root` | The mysql password used
-`phpmyadmin` | `127.0.0.1:5555/phpmyadmin/index.php` | The phpmyadmin username : root | password : root
+`phpmyadmin` | `127.0.0.1:5555/phpmyadmin/index.php` | The phpmyadmin username : root \ password : root
 
 
 
