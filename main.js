@@ -79,16 +79,16 @@ function startMySQL() {
 // Stop MySQL Server
 function stopMySQL() {
   if (mysqlProcess) {
-    exec(
-      `${path.join(mysqlDir, "bin", "mysqladmin.exe")} -u root shutdown`,
-      (error) => {
-        if (error) {
-          console.error(`Error shutting down MySQL: ${error.message}`);
-        } else {
-          console.log("MySQL server stopped.");
-        }
+    const mysqlAdminPath = path.join(mysqlDir, "bin", "mysqladmin.exe");
+    const command = `"${mysqlAdminPath}" -u root shutdown`;
+
+    exec(command, (error) => {
+      if (error) {
+        console.error(`Error shutting down MySQL: ${error.message}`);
+      } else {
+        console.log("MySQL server stopped.");
       }
-    );
+    });
   }
 }
 
@@ -152,7 +152,6 @@ function stopPHPServer() {
 }
 
 // Create application menu
-// Create application menu
 function createMenu() {
   const menuTemplate = [
     {
@@ -170,6 +169,8 @@ function createMenu() {
           label: "Quit",
           accelerator: "CmdOrCtrl+Q",
           click() {
+            stopPHPServer();
+            stopMySQL();
             app.quit();
           },
         },
