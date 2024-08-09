@@ -77,6 +77,6 @@ echo _gettext("Close");
 
     public function getSourceContext()
     {
-        return new Source("", "modals/unhide_nav_item.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\ELECTRON-4-PHP\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\modals\\unhide_nav_item.twig");
+        return new Source("", "modals/unhide_nav_item.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\modals\\unhide_nav_item.twig");
     }
 }

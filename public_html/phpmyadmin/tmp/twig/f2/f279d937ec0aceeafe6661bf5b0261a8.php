@@ -174,6 +174,6 @@ echo _gettext("Table:");
 
     public function getSourceContext()
     {
-        return new Source("", "menu/breadcrumbs.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\ELECTRON-4-PHP\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\menu\\breadcrumbs.twig");
+        return new Source("", "menu/breadcrumbs.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\menu\\breadcrumbs.twig");
     }
 }

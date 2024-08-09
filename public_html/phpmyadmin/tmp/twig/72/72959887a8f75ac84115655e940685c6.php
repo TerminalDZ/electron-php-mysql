@@ -68,32 +68,32 @@ echo _gettext("none");
         ob_start(function () { return ''; });
 // l10n: Display text for calendar close link
 echo _gettext("Done");
-        $___internal_parse_1_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_1_, "js");
+        $___internal_parse_0_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_0_, "js");
         echo "';
   \$.datepicker.regional[''].prevText = '";
         // line 16
         ob_start(function () { return ''; });
 // l10n: Previous month. Display text for previous month link in calendar
 echo _gettext("Prev");
-        $___internal_parse_2_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_2_, "js");
+        $___internal_parse_1_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_1_, "js");
         echo "';
   \$.datepicker.regional[''].nextText = '";
         // line 17
         ob_start(function () { return ''; });
 // l10n: Next month. Display text for next month link in calendar
 echo _gettext("Next");
-        $___internal_parse_3_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_3_, "js");
+        $___internal_parse_2_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_2_, "js");
         echo "';
   \$.datepicker.regional[''].currentText = '";
         // line 18
         ob_start(function () { return ''; });
 // l10n: Display text for current month link in calendar
 echo _gettext("Today");
-        $___internal_parse_4_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_4_, "js");
+        $___internal_parse_3_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_3_, "js");
         echo "';
   \$.datepicker.regional[''].monthNames = [
     '";
@@ -151,96 +151,96 @@ echo _gettext("Today");
         ob_start(function () { return ''; });
 // l10n: Short month name for January
 echo _gettext("Jan");
-        $___internal_parse_5_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_5_, "js");
+        $___internal_parse_4_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_4_, "js");
         echo "',
     '";
         // line 35
         ob_start(function () { return ''; });
 // l10n: Short month name for February
 echo _gettext("Feb");
-        $___internal_parse_6_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_6_, "js");
+        $___internal_parse_5_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_5_, "js");
         echo "',
     '";
         // line 36
         ob_start(function () { return ''; });
 // l10n: Short month name for March
 echo _gettext("Mar");
-        $___internal_parse_7_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_7_, "js");
+        $___internal_parse_6_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_6_, "js");
         echo "',
     '";
         // line 37
         ob_start(function () { return ''; });
 // l10n: Short month name for April
 echo _gettext("Apr");
-        $___internal_parse_8_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_8_, "js");
+        $___internal_parse_7_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_7_, "js");
         echo "',
     '";
         // line 38
         ob_start(function () { return ''; });
 // l10n: Short month name for May
 echo _gettext("May");
-        $___internal_parse_9_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_9_, "js");
+        $___internal_parse_8_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_8_, "js");
         echo "',
     '";
         // line 39
         ob_start(function () { return ''; });
 // l10n: Short month name for June
 echo _gettext("Jun");
-        $___internal_parse_10_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_10_, "js");
+        $___internal_parse_9_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_9_, "js");
         echo "',
     '";
         // line 40
         ob_start(function () { return ''; });
 // l10n: Short month name for July
 echo _gettext("Jul");
-        $___internal_parse_11_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_11_, "js");
+        $___internal_parse_10_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_10_, "js");
         echo "',
     '";
         // line 41
         ob_start(function () { return ''; });
 // l10n: Short month name for August
 echo _gettext("Aug");
-        $___internal_parse_12_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_12_, "js");
+        $___internal_parse_11_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_11_, "js");
         echo "',
     '";
         // line 42
         ob_start(function () { return ''; });
 // l10n: Short month name for September
 echo _gettext("Sep");
-        $___internal_parse_13_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_13_, "js");
+        $___internal_parse_12_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_12_, "js");
         echo "',
     '";
         // line 43
         ob_start(function () { return ''; });
 // l10n: Short month name for October
 echo _gettext("Oct");
-        $___internal_parse_14_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_14_, "js");
+        $___internal_parse_13_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_13_, "js");
         echo "',
     '";
         // line 44
         ob_start(function () { return ''; });
 // l10n: Short month name for November
 echo _gettext("Nov");
-        $___internal_parse_15_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_15_, "js");
+        $___internal_parse_14_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_14_, "js");
         echo "',
     '";
         // line 45
         ob_start(function () { return ''; });
 // l10n: Short month name for December
 echo _gettext("Dec");
-        $___internal_parse_16_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_16_, "js");
+        $___internal_parse_15_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_15_, "js");
         echo "',
   ];
   \$.datepicker.regional[''].dayNames = [
@@ -279,56 +279,56 @@ echo _gettext("Dec");
         ob_start(function () { return ''; });
 // l10n: Short week day name for Sunday
 echo _gettext("Sun");
-        $___internal_parse_17_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_17_, "js");
+        $___internal_parse_16_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_16_, "js");
         echo "',
     '";
         // line 58
         ob_start(function () { return ''; });
 // l10n: Short week day name for Monday
 echo _gettext("Mon");
-        $___internal_parse_18_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_18_, "js");
+        $___internal_parse_17_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_17_, "js");
         echo "',
     '";
         // line 59
         ob_start(function () { return ''; });
 // l10n: Short week day name for Tuesday
 echo _gettext("Tue");
-        $___internal_parse_19_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_19_, "js");
+        $___internal_parse_18_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_18_, "js");
         echo "',
     '";
         // line 60
         ob_start(function () { return ''; });
 // l10n: Short week day name for Wednesday
 echo _gettext("Wed");
-        $___internal_parse_20_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_20_, "js");
+        $___internal_parse_19_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_19_, "js");
         echo "',
     '";
         // line 61
         ob_start(function () { return ''; });
 // l10n: Short week day name for Thursday
 echo _gettext("Thu");
-        $___internal_parse_21_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_21_, "js");
+        $___internal_parse_20_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_20_, "js");
         echo "',
     '";
         // line 62
         ob_start(function () { return ''; });
 // l10n: Short week day name for Friday
 echo _gettext("Fri");
-        $___internal_parse_22_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_22_, "js");
+        $___internal_parse_21_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_21_, "js");
         echo "',
     '";
         // line 63
         ob_start(function () { return ''; });
 // l10n: Short week day name for Saturday
 echo _gettext("Sat");
-        $___internal_parse_23_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_23_, "js");
+        $___internal_parse_22_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_22_, "js");
         echo "',
   ];
   \$.datepicker.regional[''].dayNamesMin = [
@@ -337,56 +337,56 @@ echo _gettext("Sat");
         ob_start(function () { return ''; });
 // l10n: Minimal week day name for Sunday
 echo _gettext("Su");
-        $___internal_parse_24_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_24_, "js");
+        $___internal_parse_23_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_23_, "js");
         echo "',
     '";
         // line 67
         ob_start(function () { return ''; });
 // l10n: Minimal week day name for Monday
 echo _gettext("Mo");
-        $___internal_parse_25_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_25_, "js");
+        $___internal_parse_24_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_24_, "js");
         echo "',
     '";
         // line 68
         ob_start(function () { return ''; });
 // l10n: Minimal week day name for Tuesday
 echo _gettext("Tu");
-        $___internal_parse_26_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_26_, "js");
+        $___internal_parse_25_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_25_, "js");
         echo "',
     '";
         // line 69
         ob_start(function () { return ''; });
 // l10n: Minimal week day name for Wednesday
 echo _gettext("We");
-        $___internal_parse_27_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_27_, "js");
+        $___internal_parse_26_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_26_, "js");
         echo "',
     '";
         // line 70
         ob_start(function () { return ''; });
 // l10n: Minimal week day name for Thursday
 echo _gettext("Th");
-        $___internal_parse_28_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_28_, "js");
+        $___internal_parse_27_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_27_, "js");
         echo "',
     '";
         // line 71
         ob_start(function () { return ''; });
 // l10n: Minimal week day name for Friday
 echo _gettext("Fr");
-        $___internal_parse_29_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_29_, "js");
+        $___internal_parse_28_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_28_, "js");
         echo "',
     '";
         // line 72
         ob_start(function () { return ''; });
 // l10n: Minimal week day name for Saturday
 echo _gettext("Sa");
-        $___internal_parse_30_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_30_, "js");
+        $___internal_parse_29_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_29_, "js");
         echo "',
   ];
   \$.datepicker.regional[''].weekHeader = '";
@@ -394,8 +394,8 @@ echo _gettext("Sa");
         ob_start(function () { return ''; });
 // l10n: Column header for week of the year in calendar
 echo _gettext("Wk");
-        $___internal_parse_31_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_31_, "js");
+        $___internal_parse_30_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_30_, "js");
         echo "';
   \$.datepicker.regional[''].showMonthAfterYear = ";
         // line 75
@@ -507,16 +507,16 @@ function extendingValidatorMessages () {
         ob_start(function () { return ''; });
 // l10n: To validate the usage of a MD5 function on the column
 echo _gettext("This column can not contain a 32 chars value");
-        $___internal_parse_32_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_32_, "js");
+        $___internal_parse_31_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_31_, "js");
         echo "'),
     validationFunctionForAesDesEncrypt: \$.validator.format('";
         // line 109
         ob_start(function () { return ''; });
 // l10n: To validate the usage of a AES_ENCRYPT/DES_ENCRYPT function on the column
 echo _gettext("These functions are meant to return a binary result; to avoid inconsistent results you should store it in a BINARY, VARBINARY, or BLOB column.");
-        $___internal_parse_33_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
-        echo twig_escape_filter($this->env, $___internal_parse_33_, "js");
+        $___internal_parse_32_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        echo twig_escape_filter($this->env, $___internal_parse_32_, "js");
         echo "')
   });
 }
@@ -540,6 +540,6 @@ echo _gettext("These functions are meant to return a binary result; to avoid inc
 
     public function getSourceContext()
     {
-        return new Source("", "javascript/variables.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\ELECTRON-4-PHP\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\javascript\\variables.twig");
+        return new Source("", "javascript/variables.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\javascript\\variables.twig");
     }
 }

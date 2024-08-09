@@ -601,3 +601,90 @@
 2024-08-09T10:16:54.209355Z 8 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.30).
 2024-08-09T10:16:54.209971Z 0 [System] [MY-013105] [Server] C:\Users\Idriss Boukmouche\Desktop\ELECTRON-4-PHP\electron-php-mysql\mysql\bin\mysqld.exe: Normal shutdown.
 2024-08-09T10:16:55.350146Z 0 [System] [MY-010910] [Server] C:\Users\Idriss Boukmouche\Desktop\ELECTRON-4-PHP\electron-php-mysql\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2024-08-09T14:18:56.016038Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-09T14:18:56.016141Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-09T14:18:56.016196Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 23368
+2024-08-09T14:18:56.058794Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-09T14:18:56.524577Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-09T14:18:57.134779Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\lib\private\.
+2024-08-09T14:18:57.144403Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-08-09T14:18:57.144971Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-08-09T14:18:57.221805Z 0 [System] [MY-010931] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-08-09T14:18:57.221934Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-08-09T14:24:48.886585Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-09T14:24:48.886668Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-09T14:24:48.886705Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 13868
+2024-08-09T14:24:48.920603Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-09T14:24:49.597396Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-09T14:25:49.555842Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-09T14:25:49.555914Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-09T14:25:49.555951Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 17536
+2024-08-09T14:25:49.601045Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-09T14:25:50.732830Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-09T14:25:51.122148Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2024-08-09T14:25:51.129314Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2024-08-09T14:25:51.178038Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\lib\private\.
+2024-08-09T14:25:51.183779Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-08-09T14:25:51.184246Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-08-09T14:25:51.244228Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-08-09T14:25:51.244422Z 0 [System] [MY-010931] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-08-09T14:28:14.690382Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-09T14:28:14.690478Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-09T14:28:14.690523Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 11952
+2024-08-09T14:28:14.731004Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-09T14:28:15.485207Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-09T14:28:15.937587Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2024-08-09T14:28:15.951247Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2024-08-09T14:28:16.001921Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\lib\private\.
+2024-08-09T14:28:16.006674Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-08-09T14:28:16.007070Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-08-09T14:28:16.073792Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-08-09T14:28:16.074038Z 0 [System] [MY-010931] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-08-09T14:28:27.794107Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-09T14:28:27.794228Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-09T14:28:27.794288Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 24292
+2024-08-09T14:28:27.829797Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-09T14:28:29.041610Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-09T14:28:29.386369Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2024-08-09T14:28:29.391450Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2024-08-09T14:28:29.423690Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\lib\private\.
+2024-08-09T14:28:29.428461Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-08-09T14:28:29.428845Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-08-09T14:28:29.468803Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-08-09T14:28:29.468994Z 0 [System] [MY-010931] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-08-09T14:30:11.930377Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-09T14:30:11.930449Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-09T14:30:11.930487Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 11560
+2024-08-09T14:30:11.962687Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-09T14:30:12.647422Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-09T14:30:13.097907Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2024-08-09T14:30:13.107915Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2024-08-09T14:30:13.213869Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\lib\private\.
+2024-08-09T14:30:13.219990Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-08-09T14:30:13.220589Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-08-09T14:30:13.273243Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-08-09T14:30:13.273444Z 0 [System] [MY-010931] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-08-09T14:31:21.206027Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-09T14:31:21.206093Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-09T14:31:21.206126Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 14300
+2024-08-09T14:31:21.237959Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-09T14:31:21.927333Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-09T14:31:22.507764Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2024-08-09T14:31:22.514603Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2024-08-09T14:31:22.553061Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\lib\private\.
+2024-08-09T14:31:22.558903Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-08-09T14:31:22.559488Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-08-09T14:31:22.617377Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-08-09T14:31:22.617602Z 0 [System] [MY-010931] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-08-09T14:31:47.126509Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-09T14:31:47.126614Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-09T14:31:47.126662Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 4152
+2024-08-09T14:31:47.167980Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-09T14:31:48.060218Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-09T14:31:48.480119Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2024-08-09T14:31:48.486452Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2024-08-09T14:31:48.596395Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\lib\private\.
+2024-08-09T14:31:48.602793Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-08-09T14:31:48.603411Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-08-09T14:31:48.665885Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-08-09T14:31:48.666116Z 0 [System] [MY-010931] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.

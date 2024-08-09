@@ -137,9 +137,9 @@ echo _gettext("Git information missing!");
                 }
                 // line 38
                 echo "      ";
-                $___internal_parse_34_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+                $___internal_parse_33_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
                 // line 25
-                echo $this->env->getFilter('notice')->getCallable()($___internal_parse_34_);
+                echo $this->env->getFilter('notice')->getCallable()($___internal_parse_33_);
                 // line 39
                 echo "    </div>
   ";
@@ -178,6 +178,6 @@ echo _gettext("Git information missing!");
 
     public function getSourceContext()
     {
-        return new Source("", "footer.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\ELECTRON-4-PHP\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\footer.twig");
+        return new Source("", "footer.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\footer.twig");
     }
 }

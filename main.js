@@ -6,6 +6,10 @@ const PHPServer = require("php-server-manager");
 
 const { app, BrowserWindow, Menu } = electron;
 
+const startMySQLS = true;
+const startPHPServerS = true;
+const phpPort = 2005;
+
 // MySQL Server Process
 let mysqlProcess;
 
@@ -22,10 +26,10 @@ const socketPath = path.join(mysqlDir, "mysql.sock");
 const fileMyIni = [
   "[client]",
   "#password=your_password",
-  "port=3306",
+  `port=3306`,
   `socket=${socketPath}`,
   "[mysqld]",
-  "port=3306",
+  `port=3306`,
   `socket=${socketPath}`,
   "key_buffer_size=256M",
   "max_allowed_packet=512M",
@@ -50,6 +54,10 @@ fs.writeFileSync(myIniPath, fileMyIni.join("\n"), "utf8");
 
 // Start MySQL Server
 function startMySQL() {
+  if (!startMySQLS) {
+    return;
+  }
+
   mysqlProcess = spawn(
     path.join(mysqlDir, "bin", "mysqld.exe"),
     [
@@ -78,6 +86,10 @@ function startMySQL() {
 
 // Stop MySQL Server
 function stopMySQL() {
+  if (!startMySQLS) {
+    return;
+  }
+
   if (mysqlProcess) {
     const mysqlAdminPath = path.join(mysqlDir, "bin", "mysqladmin.exe");
     const command = `"${mysqlAdminPath}" -u root shutdown`;
@@ -94,9 +106,13 @@ function stopMySQL() {
 
 // Start PHP Server
 function startPHPServer() {
+  if (!startPHPServerS) {
+    return;
+  }
+
   const phpServerOptions = {
     php: path.join(__dirname, "php", "php.exe"),
-    port: 5555,
+    port: phpPort,
     directory: path.join(__dirname, "public_html"),
     directives: {
       display_errors: 1,
@@ -132,7 +148,11 @@ function createWindow() {
     },
   });
 
-  mainWindow.loadURL("http://localhost:5555");
+  if (startPHPServerS) {
+    mainWindow.loadURL("http://localhost:" + phpPort);
+  } else {
+    mainWindow.loadFile("public_html/index.html");
+  }
 
   mainWindow.on("closed", function () {
     mainWindow = null;
@@ -144,6 +164,10 @@ function createWindow() {
 
 // Stop PHP Server
 function stopPHPServer() {
+  if (!startPHPServerS) {
+    return;
+  }
+
   if (server) {
     server.close(() => {
       console.log("PHP server has stopped.");
@@ -161,7 +185,7 @@ function createMenu() {
           label: "Open phpMyAdmin",
           click() {
             require("electron").shell.openExternal(
-              "http://127.0.0.1:5555/phpmyadmin/"
+              "http://127.0.0.1:" + phpPort + "/phpmyadmin/index.php"
             );
           },
         },

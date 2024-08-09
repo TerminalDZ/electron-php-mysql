@@ -62,6 +62,6 @@ class __TwigTemplate_9b0808c5c535fbf7dc776d713f93963d extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "message.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\ELECTRON-4-PHP\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\message.twig");
+        return new Source("", "message.twig", "C:\\Users\\Idriss Boukmouche\\Desktop\\electron-php-mysql\\public_html\\phpmyadmin\\templates\\message.twig");
     }
 }
