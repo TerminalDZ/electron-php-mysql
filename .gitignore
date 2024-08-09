@@ -1,3 +1,4 @@
 node_modules/
 package-lock.json
 mysql/my.ini
+release-builds/

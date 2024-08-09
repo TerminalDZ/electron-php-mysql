@@ -1,101 +1,156 @@
-# Electron-php-mysql
+# Electron-PHP-MySQL
 
-Easiest way to use PHP, mysql in electron js
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- _At the moment it only supports windows. I sincerely invite everyone to contribute to this project and make it work in mac and linux as well._
+An easy-to-use Electron application that integrates PHP and MySQL, providing a seamless development environment for desktop applications with web technologies.
 
-**Clone and run for a quick way to see ElectronJSPHPMysql in action.**
+## Features
+
+- Electron-based desktop application
+- Integrated PHP server
+- Bundled MySQL server
+- phpMyAdmin for database management
+- not support platform (macOS, Linux) | Currently, the program supports Windows only. I am openly inviting everyone to contribute to this project and make it work on macOS and Linux as well.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- [Node.js](https://nodejs.org/) (v12 or later)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+- [Git](https://git-scm.com/)
+
+## Installation
+
+To install Electron-PHP-MySQL, follow these steps:
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/TerminalDZ/electron-php-mysql.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```
+   cd electron-php-mysql
+   ```
+
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+
+## Usage
+
+To run the application:
 
 ```
-git clone https://github.com/TerminalDZ/electron-php-mysql
-cd electron-php-mysql
-npm install
 npm start
 ```
 
-A basic ElectronJSPHPMysqlLaravel application needs just these files:
+This command will:
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
+1. Start the MySQL server
+2. Launch the PHP development server
+3. Open the Electron application window
 
-## To Use
+The application will load the PHP site from `http://localhost:5555`.
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+### Accessing phpMyAdmin
 
-```
-git clone https://github.com/TerminalDZ/electron-php-mysql
-cd electron-php-mysql
-npm install
-npm start
-```
+You can access phpMyAdmin by clicking on "File" > "Open phpMyAdmin" in the application menu, or by navigating to `http://127.0.0.1:5555/phpmyadmin/` in your web browser.
 
-## Configuration
+Default credentials:
 
-You can pass a callback to the run method, this will get called when the PHP server is up and running. If you don't pass a callback to the run method, a promise will be returned that resolves when the PHP server is up and running. These you need to do at main.js file from where you find comment of // PHP SERVER CREATION /////
+- Username: root
+- Password:
 
 ## Configuration
 
-| Name         | Default                               | Description                                                                                                        |
-| ------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `php`        | `php`                                 | The php command file                                                                                               |
-| `host`       | `127.0.0.1`                           | The server's host                                                                                                  |
-| `port`       | `5555`                                | The port used                                                                                                      |
-| `directory`  | `null`                                | The document root. By default is the current working directory                                                     |
-| `script`     | `null`                                | The "router" script                                                                                                |
-| `stdio`      | `inherit`                             | stdio option passed to the spawned process - https://nodejs.org/api/child_process.html#child_process_options_stdio |
-| `directives` | `{}`                                  | An object with the custom PHP directives                                                                           |
-| `config`     | `null`                                | The path of a custom php.ini file                                                                                  |
-| `env`        | `process.env`                         | The environment variables passed                                                                                   |
-| `mysql-host` | `127.0.0.1`                           | The mysql server's host                                                                                            |
-| `port`       | `3311`                                | The mysql port used                                                                                                |
-| `username`   | `root`                                | The mysql username used                                                                                            |
-| `password`   | `root`                                | The mysql password used                                                                                            |
-| `phpmyadmin` | `127.0.0.1:5555/phpmyadmin/index.php` | The phpmyadmin username : root \ password : root                                                                   |
+### PHP Server
 
-Example:
+You can modify the PHP server settings in `main.js`:
 
-```js
-const PHPServer = require("php-server-manager");
-
-const server = new PHPServer({
-  port: 3000,
+```javascript
+const phpServerOptions = {
+  php: path.join(__dirname, "php", "php.exe"),
+  port: 5555,
+  directory: path.join(__dirname, "public_html"),
   directives: {
-    display_errors: 0,
-    expose_php: 0,
+    display_errors: 1,
+    expose_php: 1,
   },
-});
-
-server.run();
+};
 ```
 
-## Use with gulp
+### MySQL Server
 
-```js
-gulp.task("php-server", (done) => {
-  const server = new PHPServer({
-    directory: "public",
-    script: "public/index.php",
-  });
+MySQL configuration can be adjusted in the `fileMyIni` array in `main.js`. Key settings include:
 
-  server.run(done);
-});
+```javascript
+const fileMyIni = [
+  // ...
+  "port=3306",
+  `datadir=${dataDir}`,
+  "default_authentication_plugin=mysql_native_password",
+  // ...
+];
 ```
 
-## Credits (Thank You)
+## Development
 
-OSCAROTERO FOR PHP SERVER
-https://github.com/oscarotero/php-server-manager
+### Project Structure
 
-ELECTRON
-https://electronjs.org/
+- `main.js`: The main Electron process file
+- `renderer.js`: The renderer process file
+- `public_html/`: The directory for your PHP files
+- `mysql/`: Contains the MySQL server files
+- `php/`: Contains the PHP executable and related files
 
-ELECTRON-4-PHP
-https://github.com/aj-techsoul/ELECTRON-4-PHP
+### Customizing the Application
 
-## VOLUNTEER
+1. Modify the PHP files in the `public_html/` directory to change the application's functionality.
+2. Adjust the Electron window settings in the `createWindow()` function in `main.js`.
+3. Customize the application menu by modifying the `createMenu()` function in `main.js`.
 
-Email: boukemoucheidriss@gmail.com / idriss@boukmouche.rf.gd
+## Building for Production
 
-Whatsapp: +213558601124
+1. Run the build command:
+   ```
+   npm run package-win
+   ```
 
-Instagram: @idriss_boukmouche
+This will create distributables for your current platform in the `release-builds/` directory.
+
+## Contributing
+
+Contributions to Electron-PHP-MySQL are welcome! Here's how you can contribute:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+5. Push to the branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
+
+## Contact
+
+If you have any questions or suggestions, please feel free to contact us:
+
+- Email: boukemoucheidriss@gmail.com
+- WhatsApp: +213558601124
+- Instagram: @idriss_boukmouche
+
+## Acknowledgments
+
+- [oscarotero/php-server-manager](https://github.com/oscarotero/php-server-manager) for PHP server management
+- [Electron](https://www.electronjs.org/) for the application framework
+- [MySQL](https://www.mysql.com/) for database management
+- [phpMyAdmin](https://www.phpmyadmin.net/) for database administration
+- [ELECTRON-4-PHP](https://github.com/aj-techsoul/ELECTRON-4-PHP/) for the initial project idea
+
+```
+
+[]: # (End of file)
+```

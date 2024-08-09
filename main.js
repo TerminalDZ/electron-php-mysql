@@ -4,12 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const PHPServer = require("php-server-manager");
 
-// Module to control application life.
-const app = electron.app;
-// Module for menu
-const Menu = electron.Menu;
-// Module to create native browser window.
-const BrowserWindow = electron.BrowserWindow;
+const { app, BrowserWindow, Menu } = electron;
 
 // MySQL Server Process
 let mysqlProcess;
@@ -29,7 +24,6 @@ const fileMyIni = [
   "#password=your_password",
   "port=3306",
   `socket=${socketPath}`,
-
   "[mysqld]",
   "port=3306",
   `socket=${socketPath}`,
@@ -46,7 +40,6 @@ const fileMyIni = [
   "explicit_defaults_for_timestamp=1",
   `datadir=${dataDir}`,
   "default_authentication_plugin=mysql_native_password",
-
   "[mysqldump]",
   "quick",
   "max_allowed_packet=512M",
@@ -129,12 +122,17 @@ function createWindow() {
   startMySQL();
   startPHPServer();
 
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
+  mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, "renderer.js"),
+      nodeIntegration: true,
+      contextIsolation: false,
+    },
+  });
 
-  mainWindow.loadURL(`http://${server.host}:${server.port}/`);
-
-  const { shell } = require("electron");
-  shell.showItemInFolder("fullPath");
+  mainWindow.loadURL("http://localhost:5555");
 
   mainWindow.on("closed", function () {
     mainWindow = null;
@@ -153,8 +151,149 @@ function stopPHPServer() {
   }
 }
 
+// Create application menu
+// Create application menu
+function createMenu() {
+  const menuTemplate = [
+    {
+      label: "File",
+      submenu: [
+        {
+          label: "Open phpMyAdmin",
+          click() {
+            require("electron").shell.openExternal(
+              "http://127.0.0.1:5555/phpmyadmin/"
+            );
+          },
+        },
+        {
+          label: "Quit",
+          accelerator: "CmdOrCtrl+Q",
+          click() {
+            app.quit();
+          },
+        },
+      ],
+    },
+    {
+      label: "Edit",
+      submenu: [
+        {
+          label: "Undo",
+          accelerator: "CmdOrCtrl+Z",
+          role: "undo",
+        },
+        {
+          label: "Redo",
+          accelerator: "CmdOrCtrl+Shift+Z",
+          role: "redo",
+        },
+        {
+          type: "separator",
+        },
+        {
+          label: "Cut",
+          accelerator: "CmdOrCtrl+X",
+          role: "cut",
+        },
+        {
+          label: "Copy",
+          accelerator: "CmdOrCtrl+C",
+          role: "copy",
+        },
+        {
+          label: "Paste",
+          accelerator: "CmdOrCtrl+V",
+          role: "paste",
+        },
+        {
+          label: "Select All",
+          accelerator: "CmdOrCtrl+A",
+          role: "selectall",
+        },
+      ],
+    },
+    {
+      label: "View",
+      submenu: [
+        {
+          label: "Reload",
+          accelerator: "CmdOrCtrl+R",
+          click() {
+            if (mainWindow) {
+              mainWindow.reload();
+            }
+          },
+        },
+        {
+          label: "Toggle Developer Tools",
+          accelerator: "CmdOrCtrl+I",
+          click() {
+            if (mainWindow) {
+              mainWindow.webContents.toggleDevTools();
+            }
+          },
+        },
+        {
+          type: "separator",
+        },
+        {
+          label: "Zoom In",
+          accelerator: "CmdOrCtrl+=",
+          click() {
+            if (mainWindow) {
+              mainWindow.webContents.setZoomLevel(
+                mainWindow.webContents.getZoomLevel() + 1
+              );
+            }
+          },
+        },
+        {
+          label: "Zoom Out",
+          accelerator: "CmdOrCtrl+-",
+          click() {
+            if (mainWindow) {
+              mainWindow.webContents.setZoomLevel(
+                mainWindow.webContents.getZoomLevel() - 1
+              );
+            }
+          },
+        },
+        {
+          label: "Reset Zoom",
+          accelerator: "CmdOrCtrl+0",
+          click() {
+            if (mainWindow) {
+              mainWindow.webContents.setZoomLevel(0);
+            }
+          },
+        },
+      ],
+    },
+    {
+      label: "Help",
+      submenu: [
+        {
+          label: "Documentation",
+          click() {
+            require("electron").shell.openExternal(
+              "https://github.com/TerminalDZ/electron-php-mysql"
+            );
+          },
+        },
+      ],
+    },
+  ];
+
+  const menu = Menu.buildFromTemplate(menuTemplate);
+  Menu.setApplicationMenu(menu);
+}
+
 // Initialize app
-app.on("ready", createWindow);
+app.on("ready", () => {
+  createWindow();
+  createMenu();
+});
 
 // Quit when all windows are closed
 app.on("window-all-closed", function () {
