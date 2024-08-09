@@ -1,0 +1,253 @@
+2023-12-07T14:32:36.244710Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T14:32:36.244804Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T14:32:36.244856Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 18372
+2023-12-07T14:32:36.271369Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T14:32:36.907580Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T14:32:37.732985Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T14:32:37.745985Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T14:32:37.746850Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T14:32:37.813665Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T14:32:37.813744Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T14:33:29.357362Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T14:33:30.131106Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T14:43:19.652934Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T14:43:19.652998Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T14:43:19.653029Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 10796
+2023-12-07T14:43:19.677731Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T14:43:20.087280Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T14:43:20.638009Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T14:43:20.641645Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T14:43:20.641878Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T14:43:20.676479Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T14:43:20.676600Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T14:43:59.502373Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T14:44:00.085452Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T14:44:14.596100Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T14:44:14.596162Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T14:44:14.596191Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 15076
+2023-12-07T14:44:14.621864Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T14:44:15.074970Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T14:44:15.647264Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T14:44:15.650857Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T14:44:15.651095Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T14:44:15.684840Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T14:44:15.684956Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T14:44:22.355807Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T14:44:22.684468Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T14:46:15.079587Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T14:46:15.079637Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T14:46:15.079666Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 14708
+2023-12-07T14:46:15.104627Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T14:46:15.561447Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T14:46:16.116115Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T14:46:16.119774Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T14:46:16.120018Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T14:46:16.171676Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T14:46:16.171744Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T14:47:23.255445Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T14:47:25.258839Z 0 [Warning] [MY-010909] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Forcing close of thread 8  user: 'root'.
+2023-12-07T14:47:25.879651Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T14:47:43.785798Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T14:47:43.785852Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T14:47:43.785878Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 9616
+2023-12-07T14:47:43.810880Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T14:47:44.323754Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T14:47:44.927860Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T14:47:44.931339Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T14:47:44.931598Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T14:47:44.976636Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T14:47:44.976705Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T14:49:30.252721Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T14:49:30.949644Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T14:51:55.239516Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T14:51:55.239569Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T14:51:55.239608Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 6508
+2023-12-07T14:51:55.261382Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T14:51:55.528233Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T14:51:55.854482Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T14:51:55.858511Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T14:51:55.858744Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T14:51:55.896584Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T14:51:55.896758Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T14:52:04.127195Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T14:52:04.927492Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T14:57:28.869831Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T14:57:28.869888Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T14:57:28.869915Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 2164
+2023-12-07T14:57:28.898215Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T14:57:29.245096Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T14:57:29.878598Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T14:57:29.889474Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T14:57:29.891206Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T14:57:29.965998Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T14:57:29.966115Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T14:58:09.913115Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T14:58:10.924486Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T14:58:13.238048Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T14:58:13.238156Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T14:58:13.238224Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 15568
+2023-12-07T14:58:13.278519Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T14:58:13.581322Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T14:58:13.909726Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T14:58:13.913833Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T14:58:13.914052Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T14:58:13.976052Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T14:58:13.976146Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T14:58:21.874706Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T14:58:22.966522Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T14:58:56.986491Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T14:58:56.986814Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T14:58:56.986998Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 14996
+2023-12-07T14:58:57.025261Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T14:58:57.350449Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T14:58:57.836034Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T14:58:57.839756Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T14:58:57.840007Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T14:58:57.889957Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T14:58:57.890070Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:01:35.027729Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:01:35.663227Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:01:46.464080Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:01:46.464173Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:01:46.464225Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 15372
+2023-12-07T15:01:46.488055Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:01:46.795891Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:01:47.241044Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:01:47.246578Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:01:47.246980Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:01:47.298352Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:01:47.298474Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:01:53.920323Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:01:54.278152Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:02:05.511129Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:02:05.511185Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:02:05.511217Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 16656
+2023-12-07T15:02:05.541277Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:02:05.905043Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:02:06.411876Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:02:06.417389Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:02:06.417745Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:02:06.474224Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:02:06.474416Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:02:23.725309Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:02:24.336923Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:04:07.940901Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:04:07.940988Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:04:07.941022Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 18312
+2023-12-07T15:04:07.969185Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:04:08.368138Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:04:08.881673Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:04:08.885750Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:04:08.885976Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:04:08.932819Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:04:08.932906Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:05:01.506641Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:05:02.155559Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:05:04.421789Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:05:04.421855Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:05:04.421883Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 16724
+2023-12-07T15:05:04.447001Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:05:04.849125Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:05:05.622979Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:05:05.626600Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:05:05.626839Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:05:05.669985Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:05:05.670108Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:07:57.061731Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:07:57.798951Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:09:50.867766Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:09:50.867823Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:09:50.867857Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 2220
+2023-12-07T15:09:50.885209Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:09:51.235057Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:09:51.736293Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:09:51.751693Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:09:51.752026Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:09:51.792874Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:09:51.793015Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:09:58.600369Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:09:59.686162Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:10:39.665280Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:10:39.665336Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:10:39.665364Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 7732
+2023-12-07T15:10:39.691007Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:10:40.080502Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:10:40.617761Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:10:40.622678Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:10:40.622910Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:10:40.685560Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:10:40.685770Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:12:15.036788Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:12:15.201985Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:12:29.366134Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:12:29.366187Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:12:29.366213Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 4736
+2023-12-07T15:12:29.388141Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:12:29.782404Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:12:30.211614Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:12:30.215746Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:12:30.215964Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:12:30.249418Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:12:30.249549Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:15:57.280759Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:15:57.701157Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:16:05.260792Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:16:05.260840Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:16:05.260868Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 9868
+2023-12-07T15:16:05.281242Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:16:05.656976Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:16:06.168561Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:16:06.172854Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:16:06.173077Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:16:06.218442Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:16:06.218631Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:18:15.217190Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:18:15.889354Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:31:20.393659Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:31:20.393754Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:31:20.393794Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 17000
+2023-12-07T15:31:20.426838Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:31:20.899449Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:31:21.345998Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:31:21.350843Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:31:21.351072Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:31:21.398101Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:31:21.398642Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:31:27.660679Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:31:28.357885Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:32:20.681008Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:32:20.681075Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:32:20.681107Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 7384
+2023-12-07T15:32:20.710897Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:32:21.214610Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:32:21.684501Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:32:21.688589Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:32:21.688820Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:32:21.734021Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:32:21.734090Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:32:52.505379Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:32:52.741092Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:35:07.187513Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:35:07.187634Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:35:07.187762Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 9176
+2023-12-07T15:35:07.225707Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:35:07.634931Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:35:08.157792Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:35:08.162018Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:35:08.162248Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:35:08.209777Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:35:08.210018Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:35:14.376317Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:35:15.044409Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2023-12-07T15:35:32.400946Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2023-12-07T15:35:32.400995Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2023-12-07T15:35:32.401027Z 0 [System] [MY-010116] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 10392
+2023-12-07T15:35:32.424093Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-12-07T15:35:32.751692Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-12-07T15:35:33.116816Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: E:\MY\test\electronjs\mysql\lib\private\.
+2023-12-07T15:35:33.123067Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-12-07T15:35:33.123298Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-12-07T15:35:33.170116Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-12-07T15:35:33.170216Z 0 [System] [MY-010931] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2023-12-07T15:37:57.227680Z 0 [System] [MY-013105] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Normal shutdown.
+2023-12-07T15:37:58.097187Z 0 [System] [MY-010910] [Server] E:\MY\test\electronjs\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
