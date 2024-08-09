@@ -149,8 +149,3 @@ If you have any questions or suggestions, please feel free to contact us:
 - [MySQL](https://www.mysql.com/) for database management
 - [phpMyAdmin](https://www.phpmyadmin.net/) for database administration
 - [ELECTRON-4-PHP](https://github.com/aj-techsoul/ELECTRON-4-PHP/) for the initial project idea
-
-```
-
-[]: # (End of file)
-```
