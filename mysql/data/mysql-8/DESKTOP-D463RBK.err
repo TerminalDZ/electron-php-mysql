@@ -756,3 +756,14 @@
 2024-08-20T02:41:57.408946Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 13644
 2024-08-20T02:41:57.409306Z 0 [ERROR] [MY-010338] [Server] Can't find error-message file 'C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\share\errmsg.sys'. Check error-message file location and 'lc-messages-dir' configuration directive.
 2024-08-20T02:41:57.440758Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-20T02:46:40.226276Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-20T02:46:40.226374Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-20T02:46:40.226425Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 12156
+2024-08-20T02:46:40.226564Z 0 [ERROR] [MY-010338] [Server] Can't find error-message file 'C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\share\errmsg.sys'. Check error-message file location and 'lc-messages-dir' configuration directive.
+2024-08-20T02:46:40.283960Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-20T02:46:41.083872Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-20T02:46:42.043573Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\lib\private\.
+2024-08-20T02:46:42.053108Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-08-20T02:46:42.053501Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-08-20T02:46:42.196587Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-08-20T02:46:42.197900Z 0 [System] [MY-010931] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.

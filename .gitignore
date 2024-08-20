@@ -1,5 +1,6 @@
 node_modules/
 package-lock.json
+.deepsource.toml
 mysql/my.ini
 release-builds/
 mysql/#innodb_temp/*
