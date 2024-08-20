@@ -2,12 +2,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-An easy-to-use Electron application that integrates PHP and MySQL, providing a seamless development environment for desktop applications with web technologies.
+An easy-to-use Electron application that integrates PHP and MySQL, providing a seamless development environment for desktop applications with web technologies. This application embeds a web view that loads content from a local PHP server.
 
 ## Features
 
-- Electron-based desktop application
-- Integrated PHP server
+- Electron-based desktop application with embedded web view
+- Integrated PHP server running on port 5555
 - Bundled MySQL server
 - phpMyAdmin for database management
 - Windows support (contributions for macOS and Linux support are welcome)
@@ -52,11 +52,9 @@ npm start
 This command will:
 
 1. Start the MySQL server
-2. Launch the PHP development server
+2. Launch the PHP development server on port 5555
 3. Start a separate PHP server for phpMyAdmin
-4. Open the Electron application window
-
-The main application will load from `http://localhost:5555`.
+4. Open the Electron application window with an embedded iframe loading content from `http://localhost:5555`
 
 ### Accessing phpMyAdmin
 
@@ -84,37 +82,18 @@ You can modify these ports in the `main.js` file.
 
 ### PHP Server
 
-PHP server settings can be adjusted in the `startPHPServer` function in `main.js`:
-
-```javascript
-const phpServerOptions = {
-  php: path.join(paths.phpDir, "php.exe"),
-  port: options.port || PHP_PORT,
-  directory: options.directory || paths.publicHtml,
-  directives: { display_errors: 1, expose_php: 1 },
-};
-```
+PHP server settings can be adjusted in the `startPHPServer` function in `main.js`.
 
 ### MySQL Server
 
-MySQL configuration is defined in the `mySqlConfig` array in `main.js`. Key settings include:
-
-```javascript
-const mySqlConfig = [
-  // ...
-  `port=${MYSQL_PORT}`,
-  `datadir=${paths.dataDir}`,
-  "default_authentication_plugin=mysql_native_password",
-  // ...
-];
-```
+MySQL configuration is defined in the `mySqlConfig` array in `main.js`.
 
 ## Project Structure
 
 - `main.js`: The main Electron process file
 - `renderer.js`: The renderer process file
-- `app.html`: The main application HTML file
-- `public_html/`: Directory for your PHP files
+- `app.html`: The main application HTML file containing the iframe
+- `public_html/`: Directory for your PHP files (served at `http://localhost:5555`)
 - `mysql/`: Contains the MySQL server files
 - `php/`: Contains the PHP executable and related files
 - `phpmyadmin/`: Contains the phpMyAdmin files
@@ -126,11 +105,13 @@ const mySqlConfig = [
 1. Modify the PHP files in the `public_html/` directory to change the application's functionality.
 2. Adjust the Electron window settings in the `createWindow()` function in `main.js`.
 3. Customize the application menu by modifying the `createMenu()` function in `main.js`.
+4. Update the `app.html` file if you need to modify the iframe or add additional content to the main window.
 
 ### Debugging
 
 - Use `console.log()` statements in `main.js` for server-side logging.
 - Access the Chromium Developer Tools for the renderer process via View > Toggle Developer Tools.
+- To debug the PHP content, use appropriate PHP debugging techniques within your `public_html/` files.
 
 ## Building for Production
 
