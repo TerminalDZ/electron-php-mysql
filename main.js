@@ -199,6 +199,12 @@ function createMenu() {
         },
         { type: "separator" },
         {
+          label: "Full Screen",
+          accelerator: "F11",
+          click: () =>
+            mainWindow && mainWindow.setFullScreen(!mainWindow.isFullScreen()),
+        },
+        {
           label: "Zoom In",
           accelerator: "CmdOrCtrl+=",
           click: () =>

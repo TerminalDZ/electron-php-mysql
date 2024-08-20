@@ -959,3 +959,16 @@
 2024-08-20T03:21:40.909338Z 22 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.30).
 2024-08-20T03:21:40.910373Z 0 [System] [MY-013105] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: Normal shutdown.
 2024-08-20T03:21:42.123775Z 0 [System] [MY-010910] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.30)  MySQL Community Server - GPL.
+2024-08-20T03:23:28.989193Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2024-08-20T03:23:28.989275Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2024-08-20T03:23:28.989316Z 0 [System] [MY-010116] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe (mysqld 8.0.30) starting as process 25112
+2024-08-20T03:23:28.989414Z 0 [ERROR] [MY-010338] [Server] Can't find error-message file 'C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\share\errmsg.sys'. Check error-message file location and 'lc-messages-dir' configuration directive.
+2024-08-20T03:23:29.016829Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-08-20T03:23:29.492336Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-08-20T03:23:30.281102Z 0 [Warning] [MY-013829] [Server] Missing data directory for ICU regular expressions: C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\lib\private\.
+2024-08-20T03:23:30.285183Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-08-20T03:23:30.285508Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-08-20T03:23:30.324708Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-08-20T03:23:30.324928Z 0 [System] [MY-010931] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.30'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-08-20T03:23:35.700815Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.30).
+2024-08-20T03:23:35.701678Z 0 [System] [MY-013105] [Server] C:\Users\Idriss Boukmouche\Desktop\electron-php-mysql\mysql\bin\mysqld.exe: Normal shutdown.
