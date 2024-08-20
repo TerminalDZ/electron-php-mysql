@@ -163,10 +163,6 @@ If you have any questions or suggestions, please feel free to contact us:
 - WhatsApp: +213558601124
 - Instagram: @idriss_boukmouche
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - [oscarotero/php-server-manager](https://github.com/oscarotero/php-server-manager) for PHP server management
