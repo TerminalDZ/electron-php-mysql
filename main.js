@@ -1,36 +1,34 @@
+// Import required modules
 const { exec, spawn } = require("child_process");
-const electron = require("electron");
+const { app, BrowserWindow, Menu, shell } = require("electron");
 const fs = require("fs");
 const path = require("path");
 const PHPServer = require("php-server-manager");
 
-const { app, BrowserWindow, Menu } = electron;
+// Configuration Constants
+const MYSQL_PORT = 3306;
+const PHP_PORT = 5555;
+const PHPMYADMIN_PORT = 2053;
 
-const startMySQLS = true;
-const startPHPServerS = true;
-const phpPort = 5555;
+const paths = {
+  mysqlDir: path.join(__dirname, "mysql"),
+  myIniPath: path.join(__dirname, "mysql", "my.ini"),
+  dataDir: path.join(__dirname, "mysql", "data", "mysql-8"),
+  socketPath: path.join(__dirname, "mysql", "mysql.sock"),
+  phpDir: path.join(__dirname, "php"),
+  publicHtml: path.join(__dirname, "public_html"),
+  phpMyAdminDir: path.join(__dirname, "phpmyadmin"),
+};
 
-// MySQL Server Process
-let mysqlProcess;
-
-// PHP Server Process
-let server;
-
-// Paths
-const mysqlDir = path.join(__dirname, "mysql");
-const myIniPath = path.join(mysqlDir, "my.ini");
-const dataDir = path.join(mysqlDir, "data", "mysql-8");
-const socketPath = path.join(mysqlDir, "mysql.sock");
-
-// MySQL configuration
-const fileMyIni = [
+// MySQL Configuration
+const mySqlConfig = [
   "[client]",
   "#password=your_password",
-  `port=3306`,
-  `socket=${socketPath}`,
+  `port=${MYSQL_PORT}`,
+  `socket=${paths.socketPath}`,
   "[mysqld]",
-  `port=3306`,
-  `socket=${socketPath}`,
+  `port=${MYSQL_PORT}`,
+  `socket=${paths.socketPath}`,
   "key_buffer_size=256M",
   "max_allowed_packet=512M",
   "table_open_cache=256",
@@ -42,56 +40,46 @@ const fileMyIni = [
   'sql_mode="STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"',
   'secure-file-priv=""',
   "explicit_defaults_for_timestamp=1",
-  `datadir=${dataDir}`,
+  `datadir=${paths.dataDir}`,
   "default_authentication_plugin=mysql_native_password",
   "[mysqldump]",
   "quick",
   "max_allowed_packet=512M",
 ];
 
-// Create my.ini file
-fs.writeFileSync(myIniPath, fileMyIni.join("\n"), "utf8");
+// Write MySQL config to file
+function createMySQLConfig() {
+  fs.writeFileSync(paths.myIniPath, mySqlConfig.join("\n"), "utf8");
+}
 
-// Start MySQL Server
+// MySQL Server management
+let mysqlProcess;
+
 function startMySQL() {
-  if (!startMySQLS) {
-    return;
-  }
-
   mysqlProcess = spawn(
-    path.join(mysqlDir, "bin", "mysqld.exe"),
+    path.join(paths.mysqlDir, "bin", "mysqld.exe"),
     [
-      `--defaults-file=${myIniPath}`,
-      `--datadir=${dataDir}`,
-      `--socket=${socketPath}`,
-      "--port=3306",
+      `--defaults-file=${paths.myIniPath}`,
+      `--datadir=${paths.dataDir}`,
+      `--socket=${paths.socketPath}`,
+      `--port=${MYSQL_PORT}`,
     ],
-    {
-      detached: true,
-      stdio: "ignore",
-    }
+    { detached: true, stdio: "ignore" }
   );
 
   mysqlProcess.unref();
-  console.log("MySQL server started with datadir:", dataDir);
+  console.log("MySQL server started with datadir:", paths.dataDir);
 
   mysqlProcess.on("exit", () => {
     console.log("MySQL server has stopped.");
     stopPHPServer();
-    if (mainWindow) {
-      app.quit();
-    }
+    app.quit();
   });
 }
 
-// Stop MySQL Server
 function stopMySQL() {
-  if (!startMySQLS) {
-    return;
-  }
-
   if (mysqlProcess) {
-    const mysqlAdminPath = path.join(mysqlDir, "bin", "mysqladmin.exe");
+    const mysqlAdminPath = path.join(paths.mysqlDir, "bin", "mysqladmin.exe");
     const command = `"${mysqlAdminPath}" -u root shutdown`;
 
     exec(command, (error) => {
@@ -104,39 +92,43 @@ function stopMySQL() {
   }
 }
 
-// Start PHP Server
-function startPHPServer() {
-  if (!startPHPServerS) {
-    return;
-  }
+// PHP Server management
+let phpServer;
 
+function startPHPServer(options = {}) {
   const phpServerOptions = {
-    php: path.join(__dirname, "php", "php.exe"),
-    port: phpPort,
-    directory: path.join(__dirname, "public_html"),
-    directives: {
-      display_errors: 1,
-      expose_php: 1,
-    },
+    php: path.join(paths.phpDir, "php.exe"),
+    port: options.port || PHP_PORT,
+    directory: options.directory || paths.publicHtml,
+    directives: { display_errors: 1, expose_php: 1 },
   };
 
   if (process.platform !== "win32") {
-    delete phpServerOptions.php; // Remove PHP executable path for non-Windows
+    delete phpServerOptions.php;
   }
 
-  server = new PHPServer(phpServerOptions);
-
-  server.run(() => {
-    console.log("PHP server started on port " + server.port);
+  phpServer = new PHPServer(phpServerOptions);
+  phpServer.run(() => {
+    console.log(`PHP server started on port ${phpServer.port}`);
   });
 }
 
-// Create and manage main window
+function stopPHPServer() {
+  if (phpServer) {
+    phpServer.close(() => {
+      console.log("PHP server has stopped.");
+    });
+  }
+}
+
+// Application Window management
 let mainWindow;
 
 function createWindow() {
+  createMySQLConfig();
   startMySQL();
   startPHPServer();
+  startPHPServer({ port: PHPMYADMIN_PORT, directory: paths.phpMyAdminDir });
 
   mainWindow = new BrowserWindow({
     width: 800,
@@ -148,34 +140,16 @@ function createWindow() {
     },
   });
 
-  if (startPHPServerS) {
-    mainWindow.loadURL("http://localhost:" + phpPort);
-  } else {
-    mainWindow.loadFile("public_html/index.html");
-  }
+  mainWindow.loadFile("app.html");
 
-  mainWindow.on("closed", function () {
+  mainWindow.on("closed", () => {
     mainWindow = null;
     stopPHPServer();
     stopMySQL();
-    app.quit();
   });
 }
 
-// Stop PHP Server
-function stopPHPServer() {
-  if (!startPHPServerS) {
-    return;
-  }
-
-  if (server) {
-    server.close(() => {
-      console.log("PHP server has stopped.");
-    });
-  }
-}
-
-// Create application menu
+// Application Menu management
 function createMenu() {
   const menuTemplate = [
     {
@@ -183,16 +157,14 @@ function createMenu() {
       submenu: [
         {
           label: "Open phpMyAdmin",
-          click() {
-            require("electron").shell.openExternal(
-              "http://127.0.0.1:" + phpPort + "/phpmyadmin/index.php"
-            );
-          },
+          accelerator: "CmdOrCtrl+P",
+          click: () =>
+            shell.openExternal(`http://127.0.0.1:${PHPMYADMIN_PORT}/index.php`),
         },
         {
           label: "Quit",
           accelerator: "CmdOrCtrl+Q",
-          click() {
+          click: () => {
             stopPHPServer();
             stopMySQL();
             app.quit();
@@ -203,39 +175,13 @@ function createMenu() {
     {
       label: "Edit",
       submenu: [
-        {
-          label: "Undo",
-          accelerator: "CmdOrCtrl+Z",
-          role: "undo",
-        },
-        {
-          label: "Redo",
-          accelerator: "CmdOrCtrl+Shift+Z",
-          role: "redo",
-        },
-        {
-          type: "separator",
-        },
-        {
-          label: "Cut",
-          accelerator: "CmdOrCtrl+X",
-          role: "cut",
-        },
-        {
-          label: "Copy",
-          accelerator: "CmdOrCtrl+C",
-          role: "copy",
-        },
-        {
-          label: "Paste",
-          accelerator: "CmdOrCtrl+V",
-          role: "paste",
-        },
-        {
-          label: "Select All",
-          accelerator: "CmdOrCtrl+A",
-          role: "selectall",
-        },
+        { label: "Undo", accelerator: "CmdOrCtrl+Z", role: "undo" },
+        { label: "Redo", accelerator: "CmdOrCtrl+Shift+Z", role: "redo" },
+        { type: "separator" },
+        { label: "Cut", accelerator: "CmdOrCtrl+X", role: "cut" },
+        { label: "Copy", accelerator: "CmdOrCtrl+C", role: "copy" },
+        { label: "Paste", accelerator: "CmdOrCtrl+V", role: "paste" },
+        { label: "Select All", accelerator: "CmdOrCtrl+A", role: "selectAll" },
       ],
     },
     {
@@ -244,54 +190,36 @@ function createMenu() {
         {
           label: "Reload",
           accelerator: "CmdOrCtrl+R",
-          click() {
-            if (mainWindow) {
-              mainWindow.reload();
-            }
-          },
+          click: () => mainWindow && mainWindow.reload(),
         },
         {
           label: "Toggle Developer Tools",
           accelerator: "CmdOrCtrl+I",
-          click() {
-            if (mainWindow) {
-              mainWindow.webContents.toggleDevTools();
-            }
-          },
+          click: () => mainWindow && mainWindow.webContents.toggleDevTools(),
         },
-        {
-          type: "separator",
-        },
+        { type: "separator" },
         {
           label: "Zoom In",
           accelerator: "CmdOrCtrl+=",
-          click() {
-            if (mainWindow) {
-              mainWindow.webContents.setZoomLevel(
-                mainWindow.webContents.getZoomLevel() + 1
-              );
-            }
-          },
+          click: () =>
+            mainWindow &&
+            mainWindow.webContents.setZoomLevel(
+              mainWindow.webContents.getZoomLevel() + 1
+            ),
         },
         {
           label: "Zoom Out",
           accelerator: "CmdOrCtrl+-",
-          click() {
-            if (mainWindow) {
-              mainWindow.webContents.setZoomLevel(
-                mainWindow.webContents.getZoomLevel() - 1
-              );
-            }
-          },
+          click: () =>
+            mainWindow &&
+            mainWindow.webContents.setZoomLevel(
+              mainWindow.webContents.getZoomLevel() - 1
+            ),
         },
         {
           label: "Reset Zoom",
           accelerator: "CmdOrCtrl+0",
-          click() {
-            if (mainWindow) {
-              mainWindow.webContents.setZoomLevel(0);
-            }
-          },
+          click: () => mainWindow && mainWindow.webContents.setZoomLevel(0),
         },
       ],
     },
@@ -300,11 +228,10 @@ function createMenu() {
       submenu: [
         {
           label: "Documentation",
-          click() {
-            require("electron").shell.openExternal(
+          click: () =>
+            shell.openExternal(
               "https://github.com/TerminalDZ/electron-php-mysql"
-            );
-          },
+            ),
         },
       ],
     },
@@ -314,14 +241,13 @@ function createMenu() {
   Menu.setApplicationMenu(menu);
 }
 
-// Initialize app
+// App lifecycle events
 app.on("ready", () => {
   createWindow();
   createMenu();
 });
 
-// Quit when all windows are closed
-app.on("window-all-closed", function () {
+app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
     stopPHPServer();
     stopMySQL();
@@ -329,9 +255,8 @@ app.on("window-all-closed", function () {
   }
 });
 
-// Re-create window on app activation (macOS)
-app.on("activate", function () {
-  if (mainWindow === null) {
+app.on("activate", () => {
+  if (!mainWindow) {
     createWindow();
   }
 });

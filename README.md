@@ -10,7 +10,7 @@ An easy-to-use Electron application that integrates PHP and MySQL, providing a s
 - Integrated PHP server
 - Bundled MySQL server
 - phpMyAdmin for database management
-- not support platform (macOS, Linux) | Currently, the program supports Windows only. I am openly inviting everyone to contribute to this project and make it work on macOS and Linux as well.
+- Windows support (contributions for macOS and Linux support are welcome)
 
 ## Prerequisites
 
@@ -53,60 +53,73 @@ This command will:
 
 1. Start the MySQL server
 2. Launch the PHP development server
-3. Open the Electron application window
+3. Start a separate PHP server for phpMyAdmin
+4. Open the Electron application window
 
-The application will load the PHP site from `http://localhost:5555`.
+The main application will load from `http://localhost:5555`.
 
 ### Accessing phpMyAdmin
 
-You can access phpMyAdmin by clicking on "File" > "Open phpMyAdmin" in the application menu, or by navigating to `http://127.0.0.1:5555/phpmyadmin/` in your web browser.
+You can access phpMyAdmin by:
 
-Default credentials:
+- Clicking on "File" > "Open phpMyAdmin" in the application menu
+- Navigating to `http://127.0.0.1:2053/index.php` in your web browser
+
+Default MySQL credentials:
 
 - Username: root
-- Password:
+- Password: (empty)
 
 ## Configuration
 
+### Server Ports
+
+The application uses the following default ports:
+
+- MYSQL_PORT (MySQL): 3306
+- PHP_PORT (main application): 5555
+- PHPMYADMIN_PORT (phpMyAdmin): 2053
+
+You can modify these ports in the `main.js` file.
+
 ### PHP Server
 
-You can modify the PHP server settings in `main.js`:
+PHP server settings can be adjusted in the `startPHPServer` function in `main.js`:
 
 ```javascript
 const phpServerOptions = {
-  php: path.join(__dirname, "php", "php.exe"),
-  port: 5555,
-  directory: path.join(__dirname, "public_html"),
-  directives: {
-    display_errors: 1,
-    expose_php: 1,
-  },
+  php: path.join(paths.phpDir, "php.exe"),
+  port: options.port || PHP_PORT,
+  directory: options.directory || paths.publicHtml,
+  directives: { display_errors: 1, expose_php: 1 },
 };
 ```
 
 ### MySQL Server
 
-MySQL configuration can be adjusted in the `fileMyIni` array in `main.js`. Key settings include:
+MySQL configuration is defined in the `mySqlConfig` array in `main.js`. Key settings include:
 
 ```javascript
-const fileMyIni = [
+const mySqlConfig = [
   // ...
-  "port=3306",
-  `datadir=${dataDir}`,
+  `port=${MYSQL_PORT}`,
+  `datadir=${paths.dataDir}`,
   "default_authentication_plugin=mysql_native_password",
   // ...
 ];
 ```
 
-## Development
-
-### Project Structure
+## Project Structure
 
 - `main.js`: The main Electron process file
 - `renderer.js`: The renderer process file
-- `public_html/`: The directory for your PHP files
+- `app.html`: The main application HTML file
+- `public_html/`: Directory for your PHP files
 - `mysql/`: Contains the MySQL server files
 - `php/`: Contains the PHP executable and related files
+- `phpmyadmin/`: Contains the phpMyAdmin files
+
+## Development
 
 ### Customizing the Application
 
@@ -114,14 +127,20 @@ const fileMyIni = [
 2. Adjust the Electron window settings in the `createWindow()` function in `main.js`.
 3. Customize the application menu by modifying the `createMenu()` function in `main.js`.
 
+### Debugging
+
+- Use `console.log()` statements in `main.js` for server-side logging.
+- Access the Chromium Developer Tools for the renderer process via View > Toggle Developer Tools.
+
 ## Building for Production
 
-1. Run the build command:
-   ```
-   npm run package-win
-   ```
+To create a distributable for Windows:
 
-This will create distributables for your current platform in the `release-builds/` directory.
+```
+npm run package-win
+```
+
+This will create distributables in the `release-builds/` directory.
 
 ## Contributing
 
@@ -134,6 +153,8 @@ Contributions to Electron-PHP-MySQL are welcome! Here's how you can contribute:
 5. Push to the branch (`git push origin feature/AmazingFeature`)
 6. Open a Pull Request
 
+We especially welcome contributions to add support for macOS and Linux platforms.
+
 ## Contact
 
 If you have any questions or suggestions, please feel free to contact us:
@@ -141,6 +162,10 @@ If you have any questions or suggestions, please feel free to contact us:
 - Email: boukemoucheidriss@gmail.com
 - WhatsApp: +213558601124
 - Instagram: @idriss_boukmouche
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
