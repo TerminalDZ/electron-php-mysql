@@ -8,7 +8,7 @@ const { app, BrowserWindow, Menu } = electron;
 
 const startMySQLS = true;
 const startPHPServerS = true;
-const phpPort = 2005;
+const phpPort = 5555;
 
 // MySQL Server Process
 let mysqlProcess;

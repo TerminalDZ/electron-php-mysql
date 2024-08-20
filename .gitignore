@@ -2,3 +2,5 @@ node_modules/
 package-lock.json
 mysql/my.ini
 release-builds/
+mysql/#innodb_temp/*
+mysql/#innodb_redo/*
